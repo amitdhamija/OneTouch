@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FA413821AB7384100803AAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA413811AB7384100803AAD /* LoginViewController.swift */; };
+		5FA413851AB7384100803AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA413831AB7384100803AAD /* Main.storyboard */; };
+		5FA413871AB7384100803AAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA413861AB7384100803AAD /* Images.xcassets */; };
+		5FA4138A1AB7384100803AAD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA413881AB7384100803AAD /* LaunchScreen.xib */; };
+		5FA413961AB7384100803AAD /* OneTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA413951AB7384100803AAD /* OneTouchTests.swift */; };
+		5FA413A21AB7AE8500803AAD /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA413A11AB7AE8500803AAD /* KeychainWrapper.m */; };
+		5FB80A0F1AB8AFC100D67B90 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB80A0E1AB8AFC100D67B90 /* MasterViewController.swift */; };
+		5FB80A111AB8AFF600D67B90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB80A101AB8AFF600D67B90 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FA413901AB7384100803AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FA413721AB7384100803AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FA413791AB7384100803AAD;
+			remoteInfo = OneTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FA4137A1AB7384100803AAD /* OneTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA4137E1AB7384100803AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA413811AB7384100803AAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5FA413841AB7384100803AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FA413861AB7384100803AAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5FA413891AB7384100803AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5FA4138F1AB7384100803AAD /* OneTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA413941AB7384100803AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA413951AB7384100803AAD /* OneTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTouchTests.swift; sourceTree = "<group>"; };
+		5FA4139F1AB7AE8400803AAD /* OneTouch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneTouch-Bridging-Header.h"; sourceTree = "<group>"; };
+		5FA413A01AB7AE8500803AAD /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		5FA413A11AB7AE8500803AAD /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		5FB80A0E1AB8AFC100D67B90 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		5FB80A101AB8AFF600D67B90 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FA413771AB7384100803AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA4138C1AB7384100803AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FA413711AB7384100803AAD = {
+			isa = PBXGroup;
+			children = (
+				5FA4137C1AB7384100803AAD /* OneTouch */,
+				5FA413921AB7384100803AAD /* OneTouchTests */,
+				5FA4137B1AB7384100803AAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FA4137B1AB7384100803AAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4137A1AB7384100803AAD /* OneTouch.app */,
+				5FA4138F1AB7384100803AAD /* OneTouchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FA4137C1AB7384100803AAD /* OneTouch */ = {
+			isa = PBXGroup;
+			children = (
+				5FB80A101AB8AFF600D67B90 /* AppDelegate.swift */,
+				5FB80A0E1AB8AFC100D67B90 /* MasterViewController.swift */,
+				5FA413811AB7384100803AAD /* LoginViewController.swift */,
+				5FA413831AB7384100803AAD /* Main.storyboard */,
+				5FA413A01AB7AE8500803AAD /* KeychainWrapper.h */,
+				5FA413A11AB7AE8500803AAD /* KeychainWrapper.m */,
+				5FA413861AB7384100803AAD /* Images.xcassets */,
+				5FA413881AB7384100803AAD /* LaunchScreen.xib */,
+				5FA4137D1AB7384100803AAD /* Supporting Files */,
+				5FA4139F1AB7AE8400803AAD /* OneTouch-Bridging-Header.h */,
+			);
+			path = OneTouch;
+			sourceTree = "<group>";
+		};
+		5FA4137D1AB7384100803AAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4137E1AB7384100803AAD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FA413921AB7384100803AAD /* OneTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FA413951AB7384100803AAD /* OneTouchTests.swift */,
+				5FA413931AB7384100803AAD /* Supporting Files */,
+			);
+			path = OneTouchTests;
+			sourceTree = "<group>";
+		};
+		5FA413931AB7384100803AAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FA413941AB7384100803AAD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FA413791AB7384100803AAD /* OneTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA413991AB7384100803AAD /* Build configuration list for PBXNativeTarget "OneTouch" */;
+			buildPhases = (
+				5FA413761AB7384100803AAD /* Sources */,
+				5FA413771AB7384100803AAD /* Frameworks */,
+				5FA413781AB7384100803AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneTouch;
+			productName = OneTouch;
+			productReference = 5FA4137A1AB7384100803AAD /* OneTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FA4138E1AB7384100803AAD /* OneTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA4139C1AB7384100803AAD /* Build configuration list for PBXNativeTarget "OneTouchTests" */;
+			buildPhases = (
+				5FA4138B1AB7384100803AAD /* Sources */,
+				5FA4138C1AB7384100803AAD /* Frameworks */,
+				5FA4138D1AB7384100803AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FA413911AB7384100803AAD /* PBXTargetDependency */,
+			);
+			name = OneTouchTests;
+			productName = OneTouchTests;
+			productReference = 5FA4138F1AB7384100803AAD /* OneTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FA413721AB7384100803AAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Amit Dhamija";
+				TargetAttributes = {
+					5FA413791AB7384100803AAD = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					5FA4138E1AB7384100803AAD = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 5FA413791AB7384100803AAD;
+					};
+				};
+			};
+			buildConfigurationList = 5FA413751AB7384100803AAD /* Build configuration list for PBXProject "OneTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FA413711AB7384100803AAD;
+			productRefGroup = 5FA4137B1AB7384100803AAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FA413791AB7384100803AAD /* OneTouch */,
+				5FA4138E1AB7384100803AAD /* OneTouchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FA413781AB7384100803AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA413851AB7384100803AAD /* Main.storyboard in Resources */,
+				5FA4138A1AB7384100803AAD /* LaunchScreen.xib in Resources */,
+				5FA413871AB7384100803AAD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA4138D1AB7384100803AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FA413761AB7384100803AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB80A111AB8AFF600D67B90 /* AppDelegate.swift in Sources */,
+				5FA413A21AB7AE8500803AAD /* KeychainWrapper.m in Sources */,
+				5FA413821AB7384100803AAD /* LoginViewController.swift in Sources */,
+				5FB80A0F1AB8AFC100D67B90 /* MasterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA4138B1AB7384100803AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA413961AB7384100803AAD /* OneTouchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FA413911AB7384100803AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FA413791AB7384100803AAD /* OneTouch */;
+			targetProxy = 5FA413901AB7384100803AAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FA413831AB7384100803AAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FA413841AB7384100803AAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FA413881AB7384100803AAD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FA413891AB7384100803AAD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FA413971AB7384100803AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FA413981AB7384100803AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FA4139A1AB7384100803AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = OneTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OneTouch/OneTouch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FA4139B1AB7384100803AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = OneTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OneTouch/OneTouch-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		5FA4139D1AB7384100803AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OneTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneTouch.app/OneTouch";
+			};
+			name = Debug;
+		};
+		5FA4139E1AB7384100803AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OneTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneTouch.app/OneTouch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FA413751AB7384100803AAD /* Build configuration list for PBXProject "OneTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA413971AB7384100803AAD /* Debug */,
+				5FA413981AB7384100803AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FA413991AB7384100803AAD /* Build configuration list for PBXNativeTarget "OneTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA4139A1AB7384100803AAD /* Debug */,
+				5FA4139B1AB7384100803AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FA4139C1AB7384100803AAD /* Build configuration list for PBXNativeTarget "OneTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA4139D1AB7384100803AAD /* Debug */,
+				5FA4139E1AB7384100803AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FA413721AB7384100803AAD /* Project object */;
+}

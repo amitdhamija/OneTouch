@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Yvl-64-ZI8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="coO-ne-BCA">
+            <objects>
+                <viewController id="YRn-d8-QPl" customClass="LoginViewController" customModule="OneTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ATr-96-fph"/>
+                        <viewControllerLayoutGuide type="bottom" id="0W3-Tu-dbi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NyG-lc-IsG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ImV-KX-vpp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="American Funds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5p-xd-ozm">
+                                <rect key="frame" x="140" y="30" width="134" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IconMenu" translatesAutoresizingMaskIntoConstraints="NO" id="oGu-47-NMU">
+                                <rect key="frame" x="365" y="32" width="29" height="23"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoAF" translatesAutoresizingMaskIntoConstraints="NO" id="2s3-Pv-bN2">
+                                <rect key="frame" x="30" y="94" width="151" height="148"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nxZ-1o-ogC">
+                                <rect key="frame" x="0.0" y="275" width="414" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d8k-Ay-bHW">
+                                <rect key="frame" x="30" y="310" width="354" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YRn-d8-QPl" id="JFM-WM-Bmw"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgroundTextField" translatesAutoresizingMaskIntoConstraints="NO" id="2KR-ou-GmK">
+                                <rect key="frame" x="30" y="340" width="354" height="1"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBz-oZ-PB4">
+                                <rect key="frame" x="30" y="360" width="354" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="YRn-d8-QPl" eventType="editingDidEndOnExit" id="mU1-Nd-9jr"/>
+                                    <outlet property="delegate" destination="YRn-d8-QPl" id="KpC-U6-cDy"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgroundTextField" translatesAutoresizingMaskIntoConstraints="NO" id="Hkf-ll-iy8">
+                                <rect key="frame" x="30" y="390" width="354" height="1"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zk4-Xc-p8f">
+                                <rect key="frame" x="247" y="410" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Save username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhH-gj-JsN">
+                                <rect key="frame" x="116" y="410" width="111" height="31"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYv-3L-ynM">
+                                <rect key="frame" x="22" y="460" width="370" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Log In" backgroundImage="ButtonLogin"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="YRn-d8-QPl" eventType="touchUpInside" id="OSg-LJ-6zf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot Username/Password?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Taq-df-Y0x">
+                                <rect key="frame" x="75" y="510" width="160" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" red="0.098039215686274508" green="0.27058823529411763" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="|" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16X-FA-n9g">
+                                <rect key="frame" x="244" y="510" width="2" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Setup Touch ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk1-hR-jjV">
+                                <rect key="frame" x="255" y="510" width="84" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" red="0.098039215686274508" green="0.27058823529411763" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJ3-kk-nJE">
+                                <rect key="frame" x="182" y="625" width="50" height="50"/>
+                                <state key="normal" image="IconTouch">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchIDLoginAction:" destination="YRn-d8-QPl" eventType="touchUpInside" id="jQU-qj-WqV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="LYv-3L-ynM" id="nFG-2S-Vhb"/>
+                        <outlet property="passwordTextField" destination="VBz-oZ-PB4" id="Uch-6n-rZ2"/>
+                        <outlet property="usernameTextField" destination="d8k-Ay-bHW" id="Kpw-gS-9nU"/>
+                        <segue destination="RxQ-Kn-NgB" kind="unwind" identifier="dismissLogin" unwindAction="unwindSegue:" id="hkh-DW-3QL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iaI-Sa-iXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RxQ-Kn-NgB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-69.333333333333329" y="585.98666666666668"/>
+        </scene>
+        <!--Portfolio Balance-->
+        <scene sceneID="E6n-v0-Rfz">
+            <objects>
+                <viewController id="30V-E7-0Yq" customClass="MasterViewController" customModule="OneTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Scb-hP-550"/>
+                        <viewControllerLayoutGuide type="bottom" id="zjq-Vv-9bN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qwG-Hd-8H5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="czs-LN-i38">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="American Funds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV7-re-HYm">
+                                <rect key="frame" x="140" y="30" width="134" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IconMenu" translatesAutoresizingMaskIntoConstraints="NO" id="Afk-EC-Bgg">
+                                <rect key="frame" x="365" y="32" width="29" height="23"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S23-fa-kb5">
+                                <rect key="frame" x="20" y="32" width="18" height="24"/>
+                                <state key="normal" image="IconLock">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAction:" destination="30V-E7-0Yq" eventType="touchUpInside" id="GqV-8z-qGb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PORTFOLIO BALANCE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8I-e3-20x">
+                                <rect key="frame" x="143" y="110" width="131" height="17"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Value as of 03/17/2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ou-ZB-70J">
+                                <rect key="frame" x="143" y="190" width="127" height="17"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" red="0.52941176470588236" green="0.80000000000000004" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$28,069.07" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fU1-uq-dge">
+                                <rect key="frame" x="90" y="130" width="233" height="62"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="82943501 VCSP/COLLEGEAMERICA LUCY COLLEGE TTEE MR COLLEGE LIV TRUST FBO MICKEY COLLEGE" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNL-2y-vS2">
+                                <rect key="frame" x="16" y="260" width="288" height="66"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="82098223 VCSP/COLLEGEAMERICA JAMES COLLEGE TTEE MR COLLEGE LIV TRUST FBO AIT COLLEGE" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vi-z3-zzN">
+                                <rect key="frame" x="16" y="408" width="300" height="66"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1jL-4U-h6B">
+                                <rect key="frame" x="0.0" y="250" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.61176470588235299" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ke8-KW-lir">
+                                <rect key="frame" x="0.0" y="398" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.61176470589999998" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nch-Yb-c9X">
+                                <rect key="frame" x="0.0" y="546" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.61176470589999998" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Balance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW0-rh-gjh">
+                                <rect key="frame" x="16" y="346" width="67" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Balance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0g-7w-Jqj">
+                                <rect key="frame" x="16" y="494" width="67" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$19,354.02" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzO-gh-ErE">
+                                <rect key="frame" x="96" y="346" width="87" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$8,715.05" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySY-d2-oTh">
+                                <rect key="frame" x="96" y="494" width="87" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="hRU-VZ-9m7">
+                                <rect key="frame" x="350" y="314" width="11" height="17"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Uf0-IK-eGg">
+                                <rect key="frame" x="350" y="452" width="11" height="17"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ySY-d2-oTh" firstAttribute="leading" secondItem="n0g-7w-Jqj" secondAttribute="trailing" constant="5" id="0oV-kf-uBj"/>
+                            <constraint firstItem="iW0-rh-gjh" firstAttribute="top" secondItem="QNL-2y-vS2" secondAttribute="bottom" constant="20" id="2tm-RB-bL7"/>
+                            <constraint firstItem="n0g-7w-Jqj" firstAttribute="leading" secondItem="qwG-Hd-8H5" secondAttribute="leadingMargin" constant="10" id="3ap-eB-t4i"/>
+                            <constraint firstItem="QNL-2y-vS2" firstAttribute="leading" secondItem="qwG-Hd-8H5" secondAttribute="leadingMargin" constant="10" id="3uL-K9-gNh"/>
+                            <constraint firstItem="3vi-z3-zzN" firstAttribute="top" secondItem="FzO-gh-ErE" secondAttribute="bottom" constant="40" id="5fZ-O0-fDl"/>
+                            <constraint firstItem="Uf0-IK-eGg" firstAttribute="top" secondItem="hRU-VZ-9m7" secondAttribute="bottom" constant="121" id="5h5-d9-WkR"/>
+                            <constraint firstItem="fU1-uq-dge" firstAttribute="top" secondItem="c8I-e3-20x" secondAttribute="bottom" constant="5" id="8qK-uo-Odg"/>
+                            <constraint firstItem="3vi-z3-zzN" firstAttribute="leading" secondItem="qwG-Hd-8H5" secondAttribute="leadingMargin" constant="10" id="BVC-vC-oRo"/>
+                            <constraint firstItem="n0g-7w-Jqj" firstAttribute="top" secondItem="3vi-z3-zzN" secondAttribute="bottom" constant="20" id="CA4-2y-EaG"/>
+                            <constraint firstAttribute="centerX" secondItem="2ou-ZB-70J" secondAttribute="centerX" id="GCy-Bn-3Kc"/>
+                            <constraint firstAttribute="centerX" secondItem="fU1-uq-dge" secondAttribute="centerX" id="JHd-C4-8ER"/>
+                            <constraint firstItem="FzO-gh-ErE" firstAttribute="top" secondItem="QNL-2y-vS2" secondAttribute="bottom" constant="20" id="K0e-Mg-ccE"/>
+                            <constraint firstAttribute="centerX" secondItem="c8I-e3-20x" secondAttribute="centerX" id="LPy-1i-52i"/>
+                            <constraint firstItem="hRU-VZ-9m7" firstAttribute="top" secondItem="qwG-Hd-8H5" secondAttribute="topMargin" constant="314" id="NC9-yN-DNN"/>
+                            <constraint firstItem="hRU-VZ-9m7" firstAttribute="leading" secondItem="QNL-2y-vS2" secondAttribute="trailing" constant="46" id="NOE-R2-8g1"/>
+                            <constraint firstItem="ySY-d2-oTh" firstAttribute="top" secondItem="3vi-z3-zzN" secondAttribute="bottom" constant="20" id="TrP-Zm-Qy7"/>
+                            <constraint firstItem="QNL-2y-vS2" firstAttribute="top" secondItem="2ou-ZB-70J" secondAttribute="bottom" constant="50" id="Vtj-9f-uEA"/>
+                            <constraint firstItem="2ou-ZB-70J" firstAttribute="top" secondItem="c8I-e3-20x" secondAttribute="bottom" constant="65" id="Wmd-pM-XO2"/>
+                            <constraint firstItem="FzO-gh-ErE" firstAttribute="leading" secondItem="iW0-rh-gjh" secondAttribute="trailing" constant="5" id="jrQ-W2-Kza"/>
+                            <constraint firstItem="Uf0-IK-eGg" firstAttribute="leading" secondItem="3vi-z3-zzN" secondAttribute="trailing" constant="34" id="krM-2L-4wQ"/>
+                            <constraint firstItem="c8I-e3-20x" firstAttribute="top" secondItem="Scb-hP-550" secondAttribute="bottom" constant="110" id="lg4-v1-Uya"/>
+                            <constraint firstItem="iW0-rh-gjh" firstAttribute="leading" secondItem="qwG-Hd-8H5" secondAttribute="leadingMargin" constant="10" id="yvU-Ei-Ava"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Portfolio Balance" id="3TV-ru-ihX"/>
+                    <connections>
+                        <segue destination="YRn-d8-QPl" kind="modal" identifier="loginView" animates="NO" id="Uf0-Q7-IWV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AwG-vu-p91" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="-78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="REg-dv-x5K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yvl-64-ZI8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xUg-Ow-M4G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="30V-E7-0Yq" kind="relationship" relationship="rootViewController" id="jjQ-fg-Ton"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vye-NM-VwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-69.333333333333329" y="-748.81333333333328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arrow" width="16" height="25"/>
+        <image name="Background" width="375" height="667"/>
+        <image name="BackgroundTextField" width="315" height="1"/>
+        <image name="ButtonLogin" width="319" height="44"/>
+        <image name="IconLock" width="27" height="36"/>
+        <image name="IconMenu" width="43" height="35"/>
+        <image name="IconTouch" width="138" height="138"/>
+        <image name="LogoAF" width="75" height="74"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
